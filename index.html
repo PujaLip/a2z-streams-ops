@@ -1,0 +1,400 @@
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ❌ header/footer hide code REMOVE kar diya gaya hai */
+
+body{
+  margin:0;
+  background:#0a0e12;
+  font-family:Inter,sans-serif;
+  color:#e5e7eb;
+}
+
+/* ===== MAIN ===== */
+.qm-section{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  background:radial-gradient(circle at top,#0f1a20,#0a0e12 65%);
+  padding:80px 20px;
+  text-align:center;
+}
+
+.qm-badge{
+  display:inline-block;
+  padding:8px 24px;
+  border-radius:30px;
+  border:1px solid #00BADB;
+  background:#0D2228;
+  color:#00BADB;
+  font-family:Outfit;
+  margin-bottom:30px;
+}
+
+.qm-heading{
+  font-family:Outfit;
+  font-size:64px;
+  font-weight:700;
+}
+.blue{color:#00BADB}
+.white{color:#fff}
+
+.qm-subtext{
+  max-width:700px;
+  margin:22px auto 40px;
+  font-size:20px;
+  color:#9ca3af;
+}
+
+/* ===== WATCH BUTTON ===== */
+.qm-watch{
+  position:relative;
+  display:inline-block;
+  padding:18px 54px;
+  border-radius:60px;
+  background:#00BADB;
+  color:#000;
+  font-size:24px;
+  font-weight:600;
+  text-decoration:none;
+}
+.qm-watch:before{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius:60px;
+  border:2px solid rgba(0,186,219,.5);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%{opacity:.4}
+  50%{opacity:1}
+  100%{opacity:.4}
+}
+
+/* ===== VIDEO ===== */
+.qm-video-box{
+  position:relative;
+  max-width:860px;
+  margin:70px auto 20px;
+  border-radius:20px;
+  overflow:hidden;
+}
+.qm-video-box img{width:100%}
+
+.qm-play{
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.qm-play span{
+  width:86px;
+  height:86px;
+  border-radius:50%;
+  background:rgba(0,0,0,.6);
+  border:3px solid #00BADB;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:36px;
+  color:#00BADB;
+}
+
+.qm-hd{
+  position:absolute;
+  top:14px;
+  left:14px;
+  display:flex;
+  gap:6px;
+  color:#ff2a2a;
+}
+.qm-dot{width:8px;height:8px;border-radius:50%;background:#ff2a2a}
+
+/* ===== LIVE META ===== */
+.qm-meta{
+  max-width:860px;
+  margin:auto;
+  text-align:left;
+}
+.qm-live{
+  display:flex;
+  gap:24px;
+  font-size:15px;
+  color:#9ca3af;
+}
+.qm-live strong{color:#fff}
+
+/* ===== FAKE ACTIONS ===== */
+.qm-actions{
+  margin-top:14px;
+  display:flex;
+  gap:14px;
+}
+.qm-action{
+  background:#111827;
+  border:1px solid rgba(255,255,255,.12);
+  color:#e5e7eb;
+  padding:10px 18px;
+  border-radius:30px;
+  font-size:14px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  transition:.25s;
+}
+.qm-action:hover{background:#1f2933}
+.qm-action.liked{
+  background:#00BADB;
+  color:#000;
+  border-color:#00BADB;
+  box-shadow:0 0 18px rgba(0,186,219,.6);
+}
+.qm-action.subscribed{
+  background:#22c55e;
+  color:#000;
+  border-color:#22c55e;
+  box-shadow:0 0 18px rgba(34,197,94,.6);
+}
+
+/* ===== FEATURES ===== */
+.qm-features{
+  max-width:1100px;
+  margin:90px auto 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
+}
+.qm-card{
+  background:#111827;
+  border-radius:18px;
+  padding:32px 24px;
+}
+.qm-icon{font-size:36px;color:#00BADB}
+.qm-card h4{font-family:Outfit;color:#fff}
+.qm-card p{color:#9ca3af}
+
+/* ===== TRUST ===== */
+.qm-trust{
+  margin-top:90px;
+  padding-top:40px;
+  border-top:1px solid rgba(255,255,255,.08);
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+.qm-trust strong{
+  font-family:Outfit;
+  font-size:34px;
+  color:#00BADB;
+}
+.qm-trust span{font-size:14px;color:#9ca3af}
+
+@media(max-width:768px){
+  .qm-heading{font-size:42px}
+  .qm-live{flex-direction:column;gap:10px}
+}
+</style>
+
+<section class="qm-section">
+
+  <div class="qm-badge">Watch & Download Bollywood, Hollywood, South, Hindi Dubbed Movies in HD</div>
+ 
+
+  <h1 class="qm-heading">
+    <span class="blue" id="dynamicKeyword">Watch Full</span>
+    <span class="white"> Movie Download 2026</span>
+  </h1>
+
+  <p class="qm-subtext">
+    Explore featured video content with safety, quality, and credibility.
+  </p>
+
+  <a class="qm-watch" target="_blank"
+     href="https://www.effectivegatecpm.com/pxc9vbseq3?key=8b066bc0e873c4edb3c7e69d3ee20188">
+    ▶ Watch Now
+  </a>
+  
+  <!-- Ad 1 -->
+
+<div style="width:100%; display:flex; justify-content:center; margin:20px 0;">
+  <div style="text-align:center;">
+    
+
+
+  </div>
+</div>
+
+
+  <div class="qm-video-box">
+    <img src="https://www.heyuguys.com/images/2012/01/Universal-Studios-Centenery-Logo.jpg">
+    <div class="qm-hd"><div class="qm-dot"></div>HD</div>
+    <a class="qm-play" target="_blank"
+       href="https://www.effectivegatecpm.com/pxc9vbseq3?key=8b066bc0e873c4edb3c7e69d3ee20188">
+      <span>▶</span>
+    </a>
+  </div>
+
+  <div class="qm-meta">
+    <div class="qm-live">
+      <span>👁 <strong id="views">1,248,230</strong> views</span>
+      <span>👍 <strong id="likes">89,420</strong> likes</span>
+      <span>🟢 <strong id="live">4,382</strong> watching now</span>
+    </div>
+
+    <div class="qm-actions">
+      <button id="likeBtn" class="qm-action">👍 <span>Like</span></button>
+      <button id="subBtn" class="qm-action">🔔 <span>Subscribe</span></button>
+    </div>
+  </div>
+
+<!-- Ad 1 -->
+
+<div style="width:100%; display:flex; justify-content:center; margin:20px 0;">
+  <div style="text-align:center;">
+    
+
+
+  </div>
+</div>
+
+  <div class="qm-features">
+    <div class="qm-card">
+      <div class="qm-icon">💎</div>
+      <h4>Exclusive Premium</h4>
+      <p>Hand-picked high-quality viral content.</p>
+    </div>
+    <div class="qm-card">
+      <div class="qm-icon">📱</div>
+      <h4>Mobile Friendly</h4>
+      <p>Optimized for all screen sizes.</p>
+    </div>
+    <div class="qm-card">
+      <div class="qm-icon">🔒</div>
+      <h4>Safe & Verified</h4>
+      <p>Quality-checked & trusted videos.</p>
+    </div>
+  </div>
+
+  <div class="qm-trust">
+    <div><strong>98%</strong><span>User Satisfaction</span></div>
+    <div><strong>1.2M+</strong><span>Monthly Viewers</span></div>
+    <div><strong>24/7</strong><span>Availability</span></div>
+  </div>
+
+<!-- Ad 1 -->
+
+<div style="width:100%; display:flex; justify-content:center; margin:0 0;">
+  <div style="text-align:center;">
+    
+
+
+  </div>
+</div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const p=new URLSearchParams(location.search);
+  let k=p.get("k");
+  if(k){
+    k=k.replace(/[-_]+/g," ").toLowerCase()
+         .replace(/\b\w/g,c=>c.toUpperCase());
+    dynamicKeyword.textContent=k;
+    document.title=k+" Movie Download 2026 | Watch Full";
+  }
+});
+
+setInterval(()=>{
+  views.textContent=(1248000+Math.floor(Math.random()*6000)).toLocaleString();
+  likes.textContent=(89000+Math.floor(Math.random()*1200)).toLocaleString();
+  live.textContent=(3200+Math.floor(Math.random()*5300)).toLocaleString();
+},3500);
+
+likeBtn.onclick=()=>{
+  if(likeBtn.classList.contains("liked"))return;
+  likeBtn.classList.add("liked");
+  likeBtn.querySelector("span").textContent="Liked";
+  likes.textContent=(parseInt(likes.textContent.replace(/,/g,''))+Math.floor(Math.random()*5+1)).toLocaleString();
+}
+
+subBtn.onclick=()=>{
+  if(subBtn.classList.contains("subscribed"))return;
+  subBtn.classList.add("subscribed");
+  subBtn.querySelector("span").textContent="Subscribed";
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const p=new URLSearchParams(location.search);
+
+  let k=p.get("k");
+  let img=p.get("img");     // ✅ ADD
+  let link=p.get("link");   // ✅ ADD
+
+  if(k){
+    k=k.replace(/[-_]+/g," ").toLowerCase()
+         .replace(/\b\w/g,c=>c.toUpperCase());
+    dynamicKeyword.textContent=k;
+    document.title=k+" Movie Download 2026 | Watch Full";
+  }
+
+  /* ✅ IMAGE PARAM */
+  if(img){
+    const videoImg=document.querySelector(".qm-video-box img");
+    if(videoImg){
+      videoImg.src=img;
+    }
+  }
+
+  /* ✅ LINK PARAM */
+  if(link){
+    document.querySelectorAll('a[href]').forEach(a=>{
+      if(
+        a.classList.contains("qm-watch") ||
+        a.classList.contains("qm-play")
+      ){
+        a.href=link;
+      }
+    });
+  }
+});
+
+setInterval(()=>{
+  views.textContent=(1248000+Math.floor(Math.random()*6000)).toLocaleString();
+  likes.textContent=(89000+Math.floor(Math.random()*1200)).toLocaleString();
+  live.textContent=(3200+Math.floor(Math.random()*5300)).toLocaleString();
+},3500);
+
+likeBtn.onclick=()=>{
+  if(likeBtn.classList.contains("liked"))return;
+  likeBtn.classList.add("liked");
+  likeBtn.querySelector("span").textContent="Liked";
+  likes.textContent=(parseInt(likes.textContent.replace(/,/g,''))+Math.floor(Math.random()*5+1)).toLocaleString();
+}
+
+subBtn.onclick=()=>{
+  if(subBtn.classList.contains("subscribed"))return;
+  subBtn.classList.add("subscribed");
+  subBtn.querySelector("span").textContent="Subscribed";
+}
+</script>
+
+<script src="https://pl28218955.effectivegatecpm.com/95/94/ff/9594ff8d061ee0658a46e360be03532e.js"></script>
+
+   <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4985492,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4985492&101" alt="web statistics" border="0"></a></noscript>
+<!-- Histats.com  END  -->
